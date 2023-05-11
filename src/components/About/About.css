@@ -1,0 +1,16 @@
+
+
+.about-card:hover h2,
+.about-card:hover p {
+	color: #fff;
+}
+
+.exp-card {
+	transform: translate(29%, -110%) rotate(-90deg);
+}
+
+@media screen and (max-width: 768px) {
+	.exp-card {
+		transform: translate(26%, -93%) rotate(-90deg);
+	}
+}

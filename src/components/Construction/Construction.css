@@ -1,0 +1,75 @@
+.construction {
+	width: 100%;
+	height: 40vh;
+	background-image: url('./../../assets/images/home_page_3.webp');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	position: relative;
+}
+
+.construction .overlay-cover {
+	width: 35%;
+	height: 100%;
+	position: absolute;
+	background-color: rgb(255, 166, 43);
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+.construction .overlay-cover::after {
+	width: calc(100% + 300px);
+	height: 100%;
+	position: absolute;
+	background-color: rgb(255, 166, 43);
+	content: '';
+	z-index: 3;
+	top: 0;
+	left: 20%;
+	transform: rotate(45deg);
+}
+
+@media screen and (max-width: 768px) {
+	.construction .overlay-cover {
+		width: 10%;
+		height: 100%;
+	}
+	.construction .overlay-cover::after {
+		width: calc(100% + 100px);
+		height: 150%;
+		position: absolute;
+		background-color: rgb(255, 166, 43);
+		content: '';
+		z-index: 3;
+		top: 0;
+		left: 10%;
+		transform: rotate(-20deg);
+	}
+}
+.construction button {
+	background-color: aqua;
+	font-weight: bold;
+	background-color: rgb(255, 166, 43);
+	color: rgb(54, 59, 56);
+}
+
+.counter-section {
+	width: 100%;
+	height: 35vh;
+	background-image: url('./../../assets/images/home_page_4.webp');
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+.counter-section::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: '';
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	filter: blur(1);
+	z-index: 1;
+}

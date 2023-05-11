@@ -1,0 +1,12 @@
+
+.comma {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	max-width: 3rem;
+	background-color: rgb(255, 166, 43);
+	border-radius: 100%;
+	padding: 5px;
+	object-fit: contain;
+}

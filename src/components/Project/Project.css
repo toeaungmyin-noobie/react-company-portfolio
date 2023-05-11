@@ -1,0 +1,29 @@
+.project-card:hover a {
+	transition: 0.4s;
+	opacity: 1;
+}
+
+.project-card div {
+	bottom: -50px;
+}
+.project-card:hover div {
+	transition: 0.4s;
+	opacity: 1;
+	bottom: 0;
+}
+.project-card .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	z-index: 1;
+	background: #00000060;
+	opacity: 0;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
